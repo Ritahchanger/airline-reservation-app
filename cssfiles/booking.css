@@ -1,0 +1,161 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,400;0,500;1,400&family=Rowdies:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'poppins',sans-serif;
+}
+html{
+    font-size:62.5%;
+}
+::-webkit-scrollbar{
+    width:1rem;
+  }
+  ::-webkit-scrollbar-track{
+    background:#21033a;
+  }
+  ::-webkit-scrollbar-thumb{
+    background:var(--color-white);
+    border-radius:4px;
+  }
+
+:root{
+    --weight:700;
+    --background:#21033a;
+    --top-background:#210380;
+    --white:#fff;
+    --transition:All 0.5s;
+    --black:#000;
+    --red-orange:#ff004f;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style:none;
+}
+
+.flex{
+    display:flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+body{
+    background:var(--background);
+}
+.input-group{
+    margin:1rem 0rem;
+}
+.logo{
+    font-size:3rem;
+    font-weight: var(--weight);
+}
+.nav{
+    background:var(--top-background);
+    padding:10px 0rem;
+}
+.nav a{
+    color:var(--white);
+}
+.hero_btn{
+    padding:1rem 3rem;
+    font-size:1.7rem;
+    border: 2px solid var(--white);
+    cursor: pointer;;
+    transition:var(--transition);
+}
+.hero_btn:hover{
+    
+    box-shadow:0 0 5px var(--white),0 0 8px var(--white),0 0 12px var(--white);
+
+}
+.main{
+    position: relative;
+}
+.submit_btn{
+    background:hsl(237, 89%, 49%);
+    border:none;
+    color:#fff;
+    border-radius:10px;
+    border:3px solid hsl(237, 89%, 49%);
+    padding:1.5rem;
+    transition:all 0.5s;
+}
+.submit_btn:hover{
+    background:transparent;
+    color:hsl(237, 89%, 49%);
+}
+.day_flight{
+    font-size:1.8rem;
+}
+
+
+
+
+
+
+.footer_booking{
+    margin-top:4rem;
+    padding:2rem;
+    background:#210380;
+}
+.footer_booking .container .flex{
+    justify-content: center;
+}
+.footer_booking .container li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:45px;
+    width:45px;
+    border:3px solid var(--white);
+    margin:4rem 1rem 4rem 1rem;
+    border-radius:5rem;
+    cursor:pointer;
+    transition: var(--transition);
+}
+.footer_booking .container li:hover{
+    box-shadow:0 0 5px var(--white),0 0 8px var(--white),0 0 12px var(--white);
+}
+.footer_booking .container li i{
+    font-size:3rem;
+    color:var(--white);
+}
+.footer_booking p{
+    color:var(--white);
+    font-size:1.9rem;
+}
+.footer_booking .social-media{
+    flex-direction: column;
+}
+.footer_booking .copyright_box{
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:750px){
+    .book_form .flex{
+        flex-direction: column;
+    }
+    .form_group .input_group{
+        width:100%;
+    }
+}

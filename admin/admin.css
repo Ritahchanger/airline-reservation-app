@@ -1,0 +1,255 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style:none;
+    font-family:'poppins',sans-serif;
+}
+html{
+    font-size:62.5%;
+}
+a{
+    text-decoration:none;
+}
+.nav{
+    background:#290340;
+    padding:0 2rem;
+    position:fixed;
+    width:100%;
+    right:0;
+    left:0;
+    top:0;
+}
+.flex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content:center;
+}
+.hero_btns{
+   font-size:2rem;
+   padding:1.4rem 2.4rem;
+   background:#ff004f;
+   display: inline-flex;
+   color:#fff;
+   border:4px solid #ff004f;
+   transition:all 0.5s;
+}
+.hero_btns:hover{
+    background:transparent;
+}
+.logo{
+    font-size:2.5rem;
+    font-weight:700;
+    color:#ff004f;
+}
+.signup{
+    margin-right:1.5rem;
+}
+
+.main{
+    display: flex;
+}
+.show-menu{
+    margin-top:2rem;
+}
+.left_side_bar{
+    margin-top: 51px;
+    background:#290340;
+    width:300px;
+    height:100vh;
+}
+.left_side_bar .title{
+    color:#fff;
+    text-align: center;
+    font-size:2rem;
+    background:#ff004f;
+    padding:2rem;
+    cursor:pointer;
+}
+.navigation .flex{
+    flex-direction: column;
+}
+.navigation .navigation_ul li{
+    padding:2rem;
+    cursor:pointer;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transition:all 0.5s;
+}
+.navigation .navigation_ul li:hover{
+    background:#fff;
+}
+.navigation .navigation_ul li:hover a{
+    color:#000;
+}
+.navigation .navigation_ul li a{
+    color:#fff;
+    font-size:1.7rem;
+    transition:all 0.5s;
+}
+.main_section{
+    width:calc(100% - 300px);
+    margin-top:51px;
+    padding:2rem;
+}
+.main_section .row{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+.main_section .row .col{
+    box-shadow:0 0 5px rgba(0,0,0,0.25);
+    padding:2rem;
+    border-radius: 10px;
+    flex-basis:49%;
+}
+.main_section .row .col h1{
+    font-size:2.5rem;
+}
+.main_section .row .col p{
+    margin-top:1.5rem;
+    font-size:2rem;
+}
+.banner{
+    margin-top:2rem;
+    width:100%;
+    height:50vh;
+    background:linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)),url('../images/plane.jpg');
+    background-position:center;
+    background-size:cover;
+    background-position:center;
+
+}
+
+.rows{
+    text-align: start;
+}
+
+/* home page administrator */
+
+
+.profile{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    margin:1rem;
+    box-shadow:0 0 5px rgba(0,0,0,0.25);
+    border-radius:10px;
+    padding:1rem;
+    flex-direction: column;
+}
+.profile_image{
+    height:250px;
+    width:180px;
+    background:#ccc;
+}
+.profile_image img{
+    width:100%;
+    height:100%;;
+}
+
+.administrator_name{
+    font-size:1.7rem;
+}
+.profile_details{
+    margin-top:1.4rem;
+}
+.navigator_buttons label i{
+    font-size: 4rem;
+    color:#000;
+    cursor: pointer;
+}
+#profile_image{
+    display:none;
+}
+.navigator_buttons{
+    display:FLEX;
+    justify-content:space-between;
+    align-items:center;
+    align-content: center;
+    max-width:500px;
+    width:100%;
+    padding:1rem;
+    border:3px solid #f2f2f2f2;
+}
+.hero_btn{
+    display:inline-flex;
+    padding:1rem;
+    background:#ff004f;
+    color:#fff;
+    border-radius:10px;
+    cursor:pointer;
+
+}
+.header_titles{
+    text-align:center;
+    font-size:2rem;
+}
+.profile_details{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+.profile_details .row_details{
+    display:flex;
+    flex-direction:row;
+    align-content:center;
+    justify-content: space-between;
+    align-items: center;
+    text-align:start;
+    max-width:600px;
+    width:100%;
+}
+.labelname{
+    font-size:2rem;
+}
+.table td{
+    padding:1rem 2rem;
+    align-items:center;
+    justify-content: center;
+    align-content:center;
+    text-align:start;
+}
+.nav_buttons{
+    background: #ff004f;
+}
+.administrators_table{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    margin:1rem;
+    flex-direction: column;
+    box-shadow:0 0 5px rgba(0,0,0,0.25);
+    border-radius:10px;
+    padding:1rem;
+    flex-direction: column;
+}
+table td{
+    padding:1rem 2rem;
+}
+
+
+/*  */
+
+
+
+
+@media(max-width:1060px){
+    .main_section .row{
+        flex-direction: column;
+    }
+    .main_section .col:nth-child(2){
+        margin-top:2rem;
+    }
+}

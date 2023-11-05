@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin:0 auto;
+    width:100%;
+    margin-top:2rem;
+    max-width:700px;
+    box-shadow:0 0 5px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding:2rem;
+    border-radius: 10px;
+}
+.row .auth_links{
+    color:hsl(0,100%,100%);
+    flex-basis:50%;
+    border:1px solid hsl(240,60%,50%);
+    padding:0.6rem;
+    margin-bottom:1rem;
+    display: inline-block;
+}
+.form{
+    width:100%;
+}
+.form .input_box{
+    width:100%;
+    margin:0.5rem 0rem;
+}
+.row{
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    text-align: center;
+}
+.form input,select{
+    width:100%;
+}
+.row .input_box{
+    flex-basis:48%;
+}
+
+.form input,select{
+    padding:0.8rem;
+
+    border:none;
+    cursor:pointer;
+    color:#000;
+    background:#f2f2f2f2;
+    margin:0.5rem 0rem;
+}
+
+.form input[type=submit]{
+    background:hsl(240,60%,50%);
+    color:hsl(0,100%,100%);
+
+}
+
+.form span{
+    text-align: start;
+    font-size:0.9rem;
+    margin:0.4rem 0rem;
+}
+.error{
+    color:red;
+    display:none;
+}
+
+.input_rows{
+    text-align: start;
+}
+.login_error{
+    color:red;
+}
+
+@media(max-width:500px){
+    .input_rows{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="select.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+<body>
+  <div class="custom-select">
+    <select name="" id=""default="Tesla Bx 87">
+      <option value="">Mercedes 123XYZ</option>
+      <option value="">BMW 78B13</option>
+      <option value="">Aston Martin B13</option>
+      <option value="">Ferrari 6756</option>
+      <option value="">Bucatti XC56</option>
+      <option value="">Mazda Demi0 4r</option>
+      <option value="">Hilux 679d</option>
+    </select>
+    <span class="custom-arrow"><i class="bi bi-sort-numeric-down"></i></span>
+  </div>
+</body>
+<script>
+ var rotator=document.querySelector(".custom-arrow");
+ var selector_container=document.getElementsByClassName("select");
+  selector_container.addEventListener("click",()=>{
+  rotator.classList.add("active");
+ });
+</script>
+</html>
