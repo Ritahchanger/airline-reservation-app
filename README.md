@@ -34,4 +34,4 @@ The **Airline Reservation App** is a web-based application designed to simplify 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/airline-reservation-app.git
+   git clone https://github.com/Ritahchanger/airline-reservation-app.git
